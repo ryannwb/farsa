@@ -20,3 +20,14 @@ function postPage(file, element) {
     xhttp.open("POST", file, true);
     xhttp.send();
 }
+// =============================funtion custom jquery=============
+$.inContent.muncul = {
+    activate : function(path){
+        var _this = this;
+        var _idElement = this.getElementById('wraper-inside');
+        var _container = this.getElementById('con');
+
+        $('con').load(path);
+    }
+}
+// ===============================================================

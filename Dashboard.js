@@ -12,6 +12,8 @@ $(function () {
     // initRealTimeChart();
     // initDonutChart();
     initSparkline();
+
+    
 });
 
 var realtime = 'on';
@@ -113,3 +115,8 @@ function getRandomData() {
 
     return res;
 }
+
+$('#jqueryLinkHome').click(function(){
+    // $.inContent.muncul.activate('DashboardContent.html');
+    $('#con').load('DashboardContent.html',function(){$('#wraper-inside').fadeOut();});
+})
